@@ -3,7 +3,7 @@ This is a folk from https://github.com/rbgirshick/py-faster-rcnn . Credit goes t
 
 ### Merge faster-rcnn with latest caffe
 Tested on TX2 with JetPack 3.1
-1. If all you want is to try faster RCNN but their code is too old for your awsome new GPU and cuda1000, merging faster-rcnn with the latest caffe could sovle your problem. Thanks to this discussion https://github.com/rbgirshick/py-faster-rcnn/issues/237, here is the solution. 
+1. If all you want is to try faster RCNN but their code is too old for your awesome new GPU and cuda1000, merging faster-rcnn with the latest caffe could sovle your problem. Thanks to this discussion https://github.com/rbgirshick/py-faster-rcnn/issues/237, here is the solution. 
   ```shell
   # clone python faster-rcnn 
   git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
