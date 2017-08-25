@@ -9,7 +9,7 @@ Tested on TX2 with JetPack 3.1
   git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
   cd py-faster-rcnn/caffe-fast-rcnn
   # merge with caffe
-  git remote add caffe https://github.com/WeijingShi/caffe.git
+  git remote add caffe https://github.com/BVLC/caffe.git
   git fetch caffe
   git merge -X theirs caffe/master
   # fix some issues
