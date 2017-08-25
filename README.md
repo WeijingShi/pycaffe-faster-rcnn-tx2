@@ -29,7 +29,7 @@ Tested on TX2 with JetPack 3.1
   sudo apt-get install python-pip -y 
   # clone this repository
   git clone --recursive https://github.com/WeijingShi/pycaffe-faster-rcnn-tx2.git
-  cd py-faster-rcnn/caffe-fast-rcnn
+  cd pycaffe-faster-rcnn-tx2/caffe-fast-rcnn
   make all -j $(($(nproc) + 1))
   make test -j $(($(nproc) + 1))
   make runtest -j $(($(nproc) + 1))
