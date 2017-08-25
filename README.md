@@ -49,9 +49,9 @@ If you want to install faster-rcnn on TX2, you can either use this repository or
   # merge latest caffe
   git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
   cd py-faster-rcnn/caffe-fast-rcnn
-  git remote add caffe https://github.com/WeijingShi/caffe.git
+  git remote add caffe https://github.com/BVLC/caffe.git
   git fetch caffe
-  git merge -X theirs caffe/master
+  git merge -X theirs caffe/master -m'merge with latest caffe'
   sed -i 's/self_.attr("phase") = static_cast<int>(this->phase_);//g' include/caffe/layers/python_layer.hpp
   rm src/caffe/test/test_smooth_L1_loss_layer.cpp
   # edit configuration files
