@@ -11,7 +11,7 @@ Tested on TX2 with JetPack 3.1
   # merge with caffe
   git remote add caffe https://github.com/BVLC/caffe.git
   git fetch caffe
-  git merge -X theirs caffe/master
+  git merge -X theirs caffe/master -m'merge caffe'
   # fix some issues
   sed -i 's/self_.attr("phase") = static_cast<int>(this->phase_);//g' include/caffe/layers/python_layer.hpp
   rm src/caffe/test/test_smooth_L1_loss_layer.cpp
