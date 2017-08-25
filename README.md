@@ -28,7 +28,7 @@ Tested on TX2 with JetPack 3.1
   sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev libatlas-base-dev liblmdb-dev libblas-dev libatlas-  base-dev libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler python-numpy -y
   sudo apt-get install python-pip -y 
   # clone this repository
-  git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
+  git clone --recursive https://github.com/WeijingShi/pycaffe-faster-rcnn-tx2.git
   cd py-faster-rcnn/caffe-fast-rcnn
   make all -j $(($(nproc) + 1))
   make test -j $(($(nproc) + 1))
