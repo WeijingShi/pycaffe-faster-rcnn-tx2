@@ -2,8 +2,7 @@
 This is a folk from https://github.com/rbgirshick/py-faster-rcnn . Credit goes to the original authors.
 
 ### Merge faster-rcnn with latest caffe
-Tested on TX2 with JetPack 3.1
-1. If all you want is to try faster RCNN but their code is too old for your awesome new GPU and cuda1000, merging faster-rcnn with the latest caffe could sovle your problem. Thanks to this discussion https://github.com/rbgirshick/py-faster-rcnn/issues/237, here is the solution. 
+If all you want is to try faster RCNN but their code is too old for your awesome new GPU and cuda1000, merging faster-rcnn with the latest caffe could sovle your problem. Thanks to this discussion https://github.com/rbgirshick/py-faster-rcnn/issues/237, here is the solution. 
   ```shell
   # clone python faster-rcnn 
   git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
@@ -15,8 +14,10 @@ Tested on TX2 with JetPack 3.1
   # fix some issues
   sed -i 's/self_.attr("phase") = static_cast<int>(this->phase_);//g' include/caffe/layers/python_layer.hpp
   rm src/caffe/test/test_smooth_L1_loss_layer.cpp
-  ```
-2. If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually.
+```
+### Faster rcnn for nvidia TX2
+This caffe faster rcnn is tested on TX2 with Jetpack 3.1 installed. 
+If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually.
   - Use this repository:
   ```shell
   # lots of dependence 
