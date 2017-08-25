@@ -16,8 +16,7 @@ If all you want is to try faster RCNN but their code is too old for your awesome
   rm src/caffe/test/test_smooth_L1_loss_layer.cpp
 ```
 ### Faster rcnn for nvidia TX2
-This caffe faster rcnn is tested on TX2 with Jetpack 3.1 installed. 
-If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually.
+If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually. It is tested on TX2 with Jetpack 3.1. 
   - Use this repository:
   ```shell
   # lots of dependence 
