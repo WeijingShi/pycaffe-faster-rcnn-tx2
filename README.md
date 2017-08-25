@@ -4,18 +4,18 @@ This is a folk from https://github.com/rbgirshick/py-faster-rcnn . Credit goes t
 ### Merge faster-rcnn with latest caffe
 Tested on TX2 with JetPack 3.1
 1. If all you want is to try faster RCNN but their code is too old for your awesome new GPU and cuda1000, merging faster-rcnn with the latest caffe could sovle your problem. Thanks to this discussion https://github.com/rbgirshick/py-faster-rcnn/issues/237, here is the solution. 
-  ```shell
-  # clone python faster-rcnn 
-  git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
-  cd py-faster-rcnn/caffe-fast-rcnn
-  # merge with caffe
-  git remote add caffe https://github.com/BVLC/caffe.git
-  git fetch caffe
-  git merge -X theirs caffe/master
-  # fix some issues
-  sed -i 's/self_.attr("phase") = static_cast<int>(this->phase_);//g' include/caffe/layers/python_layer.hpp
-  rm src/caffe/test/test_smooth_L1_loss_layer.cpp
-  ```
+    ```shell
+    # clone python faster-rcnn 
+    git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git
+    cd py-faster-rcnn/caffe-fast-rcnn
+    # merge with caffe
+    git remote add caffe https://github.com/BVLC/caffe.git
+    git fetch caffe
+    git merge -X theirs caffe/master
+    # fix some issues
+    sed -i 's/self_.attr("phase") = static_cast<int>(this->phase_);//g' include/caffe/layers/python_layer.hpp
+    rm src/caffe/test/test_smooth_L1_loss_layer.cpp
+    ```
 2. If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually.
   - Use this repository:
     ```shell
