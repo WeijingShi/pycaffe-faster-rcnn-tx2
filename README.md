@@ -19,7 +19,7 @@ If all you want is to try faster RCNN but their code is too old for your awesome
 If you want to install faster-rcnn on TX2, you can either use this repository or modify original code manually. It is tested on TX2 with Jetpack 3.1. 
   - Use this repository:
   ```shell
-  # lots of dependence 
+  # lots of dependences 
   sudo apt-get update
   sudo apt-get install software-properties-common -y
   sudo add-apt-repository universe
@@ -38,7 +38,7 @@ If you want to install faster-rcnn on TX2, you can either use this repository or
    If everything goes well, you can follow the steps in https://github.com/rbgirshick/py-faster-rcnn for the rest.
   - Modify manually:
   ```shell
-  # lots of dependence 
+  # lots of dependences 
   sudo apt-get update
   sudo apt-get install software-properties-common -y
   sudo add-apt-repository universe
